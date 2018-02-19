@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AcmeCustomerManagment.BL
 {
-    class Product
+    public class Product: EntityBase
     {
         public Product()
         {
@@ -21,18 +21,9 @@ namespace AcmeCustomerManagment.BL
         public int ProductId { get; private set; }
         public string ProductDescription { get; set; }
         public string ProductName { get; set; }
+        
 
-        public Product Retrieve(int productId)
-        {
-            return new Product();
-        }
-
-        public bool Save()
-        {
-            return true;
-        }
-
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
@@ -41,5 +32,11 @@ namespace AcmeCustomerManagment.BL
 
             return isValid;
         }
+
+        public override string ToString()
+        {
+            return ProductName;
+        }
+
     }
 }

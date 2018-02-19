@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCustomerManagment", "Ac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcmeCustomerManagment.BL", "AcmeCustomerManagment.BL\AcmeCustomerManagment.BL.csproj", "{3F696D23-C80B-4444-80C0-5191783DF8D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerTest", "CustomerTest\CustomerTest.csproj", "{6A8CB454-5414-4CFB-B56E-F4DC04209E96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BL Test", "CustomerTest\ACM.BL Test.csproj", "{6A8CB454-5414-4CFB-B56E-F4DC04209E96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{877765B7-8203-4757-8E29-A2D29A5428D2}"
 EndProject

@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace AcmeCustomerManagment.BL
 {
-    public class Customer
+    public class Customer :EntityBase
     {
         public Customer()
+            :this(0)//chains to the constructor with parapemeter to always have a list made
         {
 
         }
         public Customer(int customerId)
         {
-            this.CustID = customerId;
+            this.CustomerID = customerId;
+            AddressList = new List<Address>();
         }
 
+        public List<Address> AddressList { get; set; }
         public static int InstanceCount { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -37,10 +40,10 @@ namespace AcmeCustomerManagment.BL
             }
         }
         public string Email { get; set; }
-        public int CustID { get; set; }
+        public int CustomerID { get; private set; }
 
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
@@ -49,23 +52,10 @@ namespace AcmeCustomerManagment.BL
 
             return isValid;
         }
-        //Retrieve one customer
-        public Customer Retrieve(int customerId)
-        {
-            //Retrieves defined customer
-            return new Customer();
-        }
 
-        public List<Customer>Retrieve()
+        public override string ToString()
         {
-            return new List<Customer>();
+            return FullName ;
         }
-
-        public bool Save()
-        {
-            //Code that saves defined Customer
-            return true;
-        }
-
     }
 }

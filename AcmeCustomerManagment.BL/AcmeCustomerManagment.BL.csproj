@@ -40,10 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Address.cs" />
+    <Compile Include="AddressRepo.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerRepo.cs" />
+    <Compile Include="EntityBase.cs" />
     <Compile Include="Order Item.cs" />
     <Compile Include="Order.cs" />
+    <Compile Include="OrderRepo.cs" />
     <Compile Include="Product.cs" />
+    <Compile Include="ProductRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
