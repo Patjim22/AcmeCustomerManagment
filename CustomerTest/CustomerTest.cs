@@ -8,7 +8,7 @@ namespace CustomerTest
     public class CustomerTest
     {
         [TestMethod]
-        public void FullNameTestValid()
+        public void CustomerFullNameTestValid()
         {
             //Arrange
             Customer customer = new Customer();
@@ -24,7 +24,7 @@ namespace CustomerTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void FullNameFirstNameEmplty()
+        public void CustomerFullNameFirstNameEmplty()
         {
             //Arrange
             Customer customer = new Customer();
@@ -39,7 +39,7 @@ namespace CustomerTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void FirstNameLastNameEmplty()
+        public void CustomerFirstNameLastNameEmplty()
         {
             //Arrange
             Customer customer = new Customer();
@@ -54,7 +54,7 @@ namespace CustomerTest
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void StaticTest()
+        public void CustomerStaticTest()
         {
             //Arrange
             var c1 = new Customer();
@@ -76,7 +76,7 @@ namespace CustomerTest
         }
 
         [TestMethod]
-        public void ValidateValid()
+        public void ValidateCustomerValid()
         {
             //Arrange
             var customer = new Customer();
@@ -93,7 +93,7 @@ namespace CustomerTest
         }
 
         [TestMethod]
-        public void ValidateMissingLastName()
+        public void ValidateCustomerMissingLastName()
         {
             //Arrange
             var customer = new Customer();

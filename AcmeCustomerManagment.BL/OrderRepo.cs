@@ -18,7 +18,6 @@ namespace AcmeCustomerManagment.BL
             }
             */
 
-
             return new Order();
         }
 
@@ -37,6 +36,5 @@ namespace AcmeCustomerManagment.BL
             }
             return success;
         }
-    }
     }
 }

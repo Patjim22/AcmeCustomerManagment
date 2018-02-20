@@ -8,7 +8,7 @@ namespace ACM.BL_Test
     public class ProductRepoTest
     {
         [TestMethod]
-        public void RetrieveExistingTest()
+        public void ProductRepoRetrieveExistingTest()
         {
             //Arrange
             var productRepoistory = new ProductRepo();
@@ -27,7 +27,6 @@ namespace ACM.BL_Test
             Assert.AreEqual(expected.ProductDescription, actual.ProductDescription);
             Assert.AreEqual(expected.CurrentPrice, actual.CurrentPrice);
             
-
         }
     }
 }

@@ -59,7 +59,4 @@ namespace AcmeCustomerManagment.BL
             return success;
         }
     }
-
-
-    }
 }

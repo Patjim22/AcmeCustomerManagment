@@ -8,7 +8,7 @@ namespace ACM.BL_Test
     public class CustomerRepoTest
     {
         [TestMethod]
-        public void RetrieveExistingTest()
+        public void CustomerRepoRetrieveTest()
         {
             //Arrange
             var customerRepoistory = new CustomerRepo();
